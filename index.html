@@ -1,42 +1,34 @@
+<!DOCTYPE html>
 <html>
-    <head>
-       <title>Mi Aplicación de Selfies</title>
- <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	<title>Salas-WebApp</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-<link href="style.css" rel="stylesheet">
-
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="Salas.js"></script>
 </head>
- 
 <body>
-    <div class="container">
-    <center>
-        <a href="" id="link" download="Ginny.jpg"></a>
-        <h1>Aplicación de voz para tomar selfies
-     <img src="https://images.app.goo.gl/M1Xextr8i1PtzbQG6" alt="" id="logo_img">
-        </h1>
-        <hr>
-        <h4 style="color:rgb(180, 249, 229);">Haz clic en permitir cuando aparezca la ventana emergente, después de dar una orden de voz.</h4>
-        
-        <div class="form-group">
-            <h3>Di "toma mi selfie"</h3>
-            <label>Tu salida de voz: </label>
-         <textarea id="tetxbox"class="form-control" readonly="true"></textarea>
-        </div>
-          <button class="btn btn-succes" onclick="start()">Iniciar</button>
-        <p>Haz clic en el botón Iniciar</p>
-
-        <label>Tu cámara: </label>
-        <div id="camera"></div>
-        <br>
-
-        <label>Tu selfie aparecerá aquí: </label>
-     <div id="result"></div>
-    </center>
-    </div>
-
-    <script src="main.js"></script>
+<center>
+	<h1 class="header">	
+		Salas-WebApp	<sup>
+	<img src="m2.png">
+	</sup>
+</h1>
+	<div class="col-lg-4 col-md-6 col-sm-6 col-xs-11 login_div">
+	<img src="Colibri Salas WebApp.jpg" class="logo">
+		<h3 >Lo que pasa en el mundo</h3>
+		<h4 >Únete a Salas-WebApp</h4>
+		<div class="form-group">
+		  <label >Nombre de usuario:</label>
+<input type="text" id="user_name" class="form-control" placeholder="Coloca tu nombre para acceder a las increíbles Salas de Chat">
+		</div>
+		<button id="login_button" class="btn btn-primary" onclick="addUser()">Iniciar sesión</button>
+		<br><br>
+	</div>
+</center>
 </body>
 </html>
